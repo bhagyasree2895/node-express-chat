@@ -9,13 +9,23 @@
   <script src="public/chat.js"></script>
 </head>
 
-<body>
+<body style="background:url('nature.jpg');background-repeat:no-repeat;background-size:cover">
 
   <ul id="messages"></ul>
 
   <div id="notifyUser"></div>
 
+
    <form id="chatform" onsubmit="return(false)">
+    <label style="color: white" for="UserName">UserName:</label>
+    <input type="text" placeholder="Type your Name here.."  value="" />
+    <br>
+    <br>
+    <label style="color:Red" for="UserEmailId">UserEmailId:</label>
+    <input type="email" id="user"autocomplete="off" placeholder="Type your UserEmail Id here.."  value="" />
+    <br>
+    <br>
+    <label style="color:violet" for="message">UserMessage::</label>
     <input type="hidden" id="user" value="" />
     <input id="m" autocomplete="off" placeholder="Type your message here.." /><input
       type="submit" id="button" value="Send" />
